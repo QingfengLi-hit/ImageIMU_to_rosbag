@@ -20,14 +20,16 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "ImageIMU_to_rosbag");
 
-    if(argc!=3)
+    if(argc!=4)
     {
-        cerr << "Usage: rosrun ImageIMU_to_bag ImageIMU_to_bag <path to  directory including image file and imu file>   <path to bag>  the numbers of camera " << endl;
+        cerr << "Usage: rosrun ImageIMU_to_bag ImageIMU_to_bag <path to  directory including image file and imu file>   <path to bag>  <the numbers of camera>" << endl;
         return 0;
     }
     ros::start();
+
     //read the numbers of camera
-    const int  numCameras =1;
+    std::string N_camera(argv[3]);
+    const int  numCameras =int (std::stoi(N_camera));
 
     // Output bag
     rosbag::Bag bag_out(argv[2],rosbag::bagmode::Write);
