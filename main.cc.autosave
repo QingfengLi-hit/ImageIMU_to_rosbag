@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 
     if(argc!=3)
     {
-        cerr << "Usage: rosrun ImageIMU_to_bag ImageIMU_to_bag <path to  directory including image file and imu file>   <path to bag>  the numbers of camera " << endl;
+        cerr << "Usage: rosrun ImageIMU_to_bag ImageIMU_to_bag <path to  directory including image file and imu file>   <path to bag>  <the numbers of camera>" << endl;
         return 0;
     }
     ros::start();
