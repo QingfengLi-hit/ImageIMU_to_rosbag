@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/jinmuyan/catkin_ws/src/ImageIMU_to_rosbag/build/devel/setup.sh
