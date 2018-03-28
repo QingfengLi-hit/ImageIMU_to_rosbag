@@ -1,4 +1,4 @@
-# BagFromImages
+# ImageIMU_to_rosbag
 
 ROS package to generate a rosbag from a collection of images and imu . Images and imus are ordered alphabetically. The timestamp for each image is assigned according to the specified frequency. 
 
